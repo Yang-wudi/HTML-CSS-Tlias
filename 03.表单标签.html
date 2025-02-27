@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单标签</title>
+</head>
+<body>
+    <!-- form表单：
+        action：表单数据提交的url地址
+        method：表单数据提交的方式
+            get ：默认，表单数据会出现在url后面，形式：/save?name=Tom&age=18
+                特点：
+                    1.get方式不安全，将表单数据明文显示在url中，所以不能提交敏感信息
+                    2.get方式提交的数据大小有限制，一般不超过2048个字符，超过会截断
+                    3.get方式提交的数据会显示在url中，会被浏览器记录，会被浏览器缓存
+                    4.get方式提交的数据会被浏览器缓存，所以会被浏览器记录，会被浏览器缓存
+            post：表单数据会在消息体/请求体中提交到服务器
+                特点：
+                    1.post方式安全，不会将数据明文显示在url中
+                    2.post方式可以提交大数据量，但是post方式提交数据大小有限制，一般不超过2M
+                    3.post方式提交的数据不会显示在url中，不会被浏览器记录，不会被浏览器缓存
+                    4.post方式提交的数据不会被浏览器缓存，所以不会被浏览器记录，所以不会被浏览器缓存
+        注意：表单项想要能够采集数据，必须得设置name属性，表示当前表单项的名字            
+     -->
+    <form action="save" method="post">
+        姓名：<input type="text" name="name" placeholder="请输入姓名"></input>
+        年龄：<input type="number" name="age" placeholder="请输入年龄"></input>
+        <input type="submit" value="提交">
+    </form>
+</body>
+</html>

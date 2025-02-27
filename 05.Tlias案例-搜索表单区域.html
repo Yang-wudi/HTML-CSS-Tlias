@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tlias智能学习辅助系统</title>
+    <style>
+        /* 导航栏样式 */
+        .navbar {
+            background-color: #beb9b9; /* 灰色背景 */
+            display: flex;
+            justify-content: space-between;  /* 左右对齐 */
+            padding: 10px;   /* 内边距 */
+            align-items: center;     /* 垂直居中 */
+        }
+
+        /* 标题样式 */
+        .navbar h1 {
+            margin: 0;
+            font-weight: bold; /* 加粗字体 */
+            color: white; /* 白色文字 */
+            /* 设置字体为楷体 */
+            font-family: "楷体";
+        }
+
+        /* 退出登录链接样式 */
+        .navbar a {
+            text-decoration: none; /* 移除下划线 */
+            color: white; /* 白色文字 */
+        }
+
+        /* 当鼠标悬停在链接上时改变颜色 */
+        .navbar a:hover {
+            background-color: #696969; /* 深灰色背景 */
+            color: black; /* 黑色文字 */
+        }
+
+        /* 搜索表单区域 */
+        .search-form{
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+            gap: 10px;  /* 插件之间的间隔 */
+            margin: 20px 0; 
+        }
+        .search-form  input[type="text"],.search-form select{
+            padding: 5px;   /* 输入框内边距 */
+            width: 300px;
+        }
+
+        .search-form  button{
+            padding: 5px 10px;
+            margin-right: 5px;
+            border: none; /* 无边框 */
+            border-radius: 4px; /*  圆角 */
+            cursor: pointer;   /*  鼠标悬停 */
+        }
+        .search-form  button.search{
+            background-color: #5cb85c;
+            color: white;
+        }
+        .search-form  button.clear{
+            background-color: #d9534f;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+<!-- 顶部导航栏 -->
+<div class="navbar">
+    <h1>Tlias智能学习辅助系统</h1>
+    <a href="#exit">退出登录</a>
+</div>
+
+<!-- 搜索表单区域 -->
+ <form class="search-form" action="search" method="post">
+    <label for="name">姓名</label>
+    <input type="text" id="name" name="name" placeholder="请输入员工姓名">
+    <label for="gender">性别</label>
+    <select id="gender" name="gender">
+        <option value="">请选择</option>
+        <option value="1">男</option>
+        <option value="2">女</option>
+    </select>
+    <label for="position">职位</label>
+    <select id="position" name="position">
+        <option value="">请选择</option>
+        <option value="1">班主任</option>   
+        <option value="2">讲师</option>
+        <option value="3">学工主管</option>
+        <option value="4">教研主管</option>
+        <option value="5">咨询师</option>
+    </select>
+    <button type="submit" class="search">查询</button>
+    <button type="reset" class="clear">清空</button>
+</form>
+</body>
+</html>
+
