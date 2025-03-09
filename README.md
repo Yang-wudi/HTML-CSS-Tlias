@@ -95,6 +95,7 @@ git clone https://github.com/Yang-wudi/HTML-CSS-Tlias.git
 ## 项目截图
 以下是部分页面的截图，帮助快速了解项目内容：
 ![01. 顶部导航栏](https://github.com/Yang-wudi/HTML-CSS-Tlias/blob/main/screenshots/screenshot_01.png)  
+![05. 搜索表单区域区域](https://github.com/Yang-wudi/HTML-CSS-Tlias/blob/main/screenshots/screenshot_05.png) 
 ![07. 表格数据展示区域](https://github.com/Yang-wudi/HTML-CSS-Tlias/blob/main/screenshots/screenshot_07.png)  
 ![08. 底部版权区域](https://github.com/Yang-wudi/HTML-CSS-Tlias/blob/main/screenshots/screenshot_08.png)
 
